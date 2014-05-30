@@ -39,7 +39,7 @@ def fixtures(category)
   end
 
   result = {}
-  if fixtures.include? category and fixtures[category] != nil
+  if fixtures.include? category and fixtures[category] != nil and fixtures[category].length > 0
     fixtures[category].each do |fixture, opts|
       if opts.instance_of?(String)
         source = opts
